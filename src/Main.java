@@ -46,7 +46,11 @@ public class Main {
         }
         System.out.println("Средняя сумма трат за месяц составила " + expensesAver + " рублей");
 
-        char[] reverseFullName = { 'n', 'a', 'v', 'I', ' ', 'v', 'o', 'n', 'a', 'v', 'I'};
+        char[] reverseFullName = {'n', 'a', 'v', 'I', ' ', 'v', 'o', 'n', 'a', 'v', 'I'};
+        for (int i = reverseFullName.length - 1; i >= 0; i--) {
+            System.out.print(reverseFullName[i]);
+        }
+        /*
         int begin=0;
         int end=reverseFullName.length-1;
         char temp;
@@ -58,6 +62,7 @@ public class Main {
             begin++;
         }
         System.out.println(reverseFullName);
+        System.out.println(reverseFullName.reverse);
         /*
         char N;
         int n=reverseFullName1.length;
